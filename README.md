@@ -1,68 +1,77 @@
-Mente Segura
+# Mente Segura #
 
-Mente Segura é um projeto Django que tem como objetivo (descrever a finalidade do seu projeto). Este projeto visa (descrever os objetivos principais).
+Mente Segura é um projeto Django que visa fornecer uma plataforma para promover a saúde mental e o bem-estar. Este projeto tem como objetivo oferecer recursos e ferramentas para ajudar os usuários a gerenciar o estresse, a ansiedade e outras questões de saúde mental.
 Tecnologias Usadas
 
-    Django - Framework web em Python.
-    Python 3.x - Linguagem utilizada no desenvolvimento.
-    PostgreSQL - Banco de dados relacional.
-    Celery - Gerenciamento de tarefas assíncronas (se aplicável).
-    Docker (opcional) - Contêineres para facilitar o deploy.
+    Django: Framework web em Python para o desenvolvimento do backend.
+    Python 3.x: Linguagem de programação utilizada no desenvolvimento.
+    PostgreSQL: Banco de dados relacional para armazenar os dados do aplicativo.
+    Celery: Sistema de filas de tarefas assíncronas para processamento em segundo plano (se aplicável).
+    Docker: Plataforma de conteinerização para facilitar a implantação e o gerenciamento do aplicativo (opcional).
+    HTML, CSS e JavaScript: Para o desenvolvimento do frontend.
 
 Requisitos
 
-Antes de começar, você precisa ter as seguintes ferramentas instaladas:
+Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
     Python 3.x
-    PostgreSQL (ou outro banco de dados, dependendo da sua configuração)
+    PostgreSQL (ou outro banco de dados de sua preferência)
     pip (gerenciador de pacotes do Python)
-    Virtualenv (opcional, mas recomendado para isolar o ambiente do seu projeto)
+    virtualenv ou venv (ambiente virtual Python, recomendado)
+    Docker (Opcional)
 
 Instalação
-1. Clone o repositório:
+
+    Clone o repositório:
+    Bash
 
 git clone https://github.com/seu-usuario/mente_segura.git
 cd mente_segura
 
-2. Crie e ative um ambiente virtual:
+Crie e ative um ambiente virtual:
+Bash
 
 python3 -m venv venv
-source venv/bin/activate   # No Linux/Mac
-venv\Scripts\activate      # No Windows
+source venv/bin/activate # No Linux/macOS
+venv\Scripts\activate # No Windows
 
-3. Instale as dependências:
+## Instale as dependências:
+Bash
 
-pip install -r requirements/base.txt  
-pip install -r requirements/local.txt  
+pip install -r requirements/base.txt
+pip install -r requirements/local.txt
 
-
-5. Crie o banco de dados (se estiver usando PostgreSQL):
+## Crie o banco de dados (PostgreSQL):
 
 No terminal, entre no PostgreSQL:
+Bash
 
 psql -U postgres
 
 Crie o banco de dados:
+SQL
 
 CREATE DATABASE nome_do_banco;
 
-6. Execute as migrações:
+## Execute as migrações:
+Bash
 
 python manage.py migrate
 
-7. Crie um superusuário para acessar o painel de administração:
+## Crie um superusuário para acessar o painel de administração:
+Bash
 
 python manage.py createsuperuser
 
-8. Inicie o servidor de desenvolvimento:
+Inicie o servidor de desenvolvimento:
+Bash
 
-python manage.py runserver
+    python manage.py runserver
 
 Agora você pode acessar o projeto no navegador em http://127.0.0.1:8000/.
-9. Acesse o painel de administração:
+
+    Acesse o painel de administração:
 
     Acesse http://127.0.0.1:8000/admin/.
     Faça login com o superusuário criado.
-
-
 
