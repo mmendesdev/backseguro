@@ -1,14 +1,15 @@
 # Mente Segura #
 
 Mente Segura é um projeto Django que visa fornecer uma plataforma para promover a saúde mental e o bem-estar. Este projeto tem como objetivo oferecer recursos e ferramentas para ajudar os usuários a gerenciar o estresse, a ansiedade e outras questões de saúde mental.
-Tecnologias Usadas
+
+
+## Tecnologias Usadas
 
     Django: Framework web em Python para o desenvolvimento do backend.
     Python 3.x: Linguagem de programação utilizada no desenvolvimento.
     PostgreSQL: Banco de dados relacional para armazenar os dados do aplicativo.
     Celery: Sistema de filas de tarefas assíncronas para processamento em segundo plano (se aplicável).
     Docker: Plataforma de conteinerização para facilitar a implantação e o gerenciamento do aplicativo (opcional).
-    HTML, CSS e JavaScript: Para o desenvolvimento do frontend.
 
 Requisitos
 
