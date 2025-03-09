@@ -20,25 +20,27 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
     virtualenv ou venv (ambiente virtual Python, recomendado)
     Docker (Opcional)
 
-Instalação
+# Instalação
 
-    Clone o repositório:
-    Bash
-
-git clone https://github.com/seu-usuario/mente_segura.git
+Clone o repositório:
+Bash
+git clone https://github.com/mmendesdev/backseguro.git
 cd mente_segura
 
-Crie e ative um ambiente virtual:
+## Crie e ative um ambiente virtual:
 Bash
 
-python3 -m venv venv
-source venv/bin/activate # No Linux/macOS
-venv\Scripts\activate # No Windows
+  python3 -m venv venv
+
+  source venv/bin/activate # No Linux/macOS
+  
+  venv\Scripts\activate # No Windows
 
 ## Instale as dependências:
 Bash
 
 pip install -r requirements/base.txt
+
 pip install -r requirements/local.txt
 
 ## Crie o banco de dados (PostgreSQL):
@@ -58,12 +60,11 @@ Bash
 
 python manage.py migrate
 
-## Crie um superusuário para acessar o painel de administração:
-Bash
+## Crie um superusuário 
 
 python manage.py createsuperuser
 
-Inicie o servidor de desenvolvimento:
+# Inicie o servidor de desenvolvimento:
 Bash
 
     python manage.py runserver
